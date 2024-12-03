@@ -1,0 +1,9 @@
+{
+  "name": "Vite + React + TS1",
+  "short_name": "Vite + React + TS1",
+  "description": "Vite + React + TS1",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff"
+}

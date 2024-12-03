@@ -6,15 +6,22 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({ 
-      registerType: 'autoUpdate',
-      devOptions: {
-        enabled: true
-      },
       manifest: {
         name: 'My Awesome App',
         short_name: 'MyApp',
         description: 'My Awesome App description',
         theme_color: '#ffffff',
+        start_url: '/',
+        display: 'standalone',
+        orientation: 'portrait',
+        background_color: '#ffffff',
+        icons: [
+          {
+            src: 'vite.svg',
+            sizes: '192x192',
+            type: 'image/svg'
+          }
+        ]
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg}']
